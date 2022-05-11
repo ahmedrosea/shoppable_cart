@@ -6,12 +6,9 @@ class GetOrdersHistoryService {
   Future<List<UserOrdersModel>> getOrderHistory(
       {required String userID}) async {
     String url = '${ApiUrl.userOrders}$userID';
-    print(url);
     var data = await ApiHelper().get(url);
-    print(data);
     List<UserOrdersModel> userOrders = [];
     for (int i = 0; i < data.length; i++) {
-      print(data[i]);
       UserOrdersModel userOrder = UserOrdersModel.fromJson(data[i]);
       userOrders.add(userOrder);
     }

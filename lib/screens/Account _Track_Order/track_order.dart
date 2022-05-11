@@ -1,16 +1,10 @@
-import 'dart:convert';
-
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:shoppablecard/images.dart';
 import 'package:shoppablecard/models/user_orders_model.dart';
 import 'package:shoppablecard/screens/Account%20_Track_Order/track%20order%20_view%20order.dart';
 import 'package:shoppablecard/state_management/provider.dart';
-import '../../api.dart';
-import '../../default_colors.dart';
-import '../../helper/api_helper.dart';
-import '../../images.dart';
-import '../../models/product_model.dart';
 
 class TrackOrder extends StatefulWidget {
   const TrackOrder({Key? key}) : super(key: key);
